@@ -6,8 +6,8 @@ public class Programa {
         Empleado trabajador2 = new Diseniador("89101112", "Roberto", 25, 1600);
         Empleado trabajador3 = new Gerente("13141516", "Pablo", 50, 2000);
 
-        System.out.println(trabajador1);
-        System.out.println(trabajador2);
-        System.out.println(trabajador3);
+        System.out.println(trabajador1.mostrarInformacion());
+        System.out.println(trabajador2.mostrarInformacion());
+        System.out.println(trabajador3.mostrarInformacion());
     }
 }

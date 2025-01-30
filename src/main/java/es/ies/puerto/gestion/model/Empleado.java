@@ -72,15 +72,22 @@ public abstract class Empleado {
 
     @Override
     public String toString() {
-        return "{" +
-                " id='" + getId() + "'" +
-                ", nombre='" + getNombre() + "'" +
-                ", edad='" + getEdad() + "'" +
-                ", salarioBase='" + getSalarioBase() + "'" +
-                "salarioFinal=" + calcularSalarioFinal() +
-                "}";
+        return " id= " + getId() + " " +
+                ", nombre= " + getNombre() + " " +
+                ", edad= " + getEdad() + " " +
+                ", salarioBase= " + getSalarioBase() + " " +
+                "salarioFinal= " + calcularSalarioFinal();
     }
 
     public abstract int calcularSalarioFinal();
+
+    public String mostrarInformacion() {
+        return "Empleado: " + getClass().getSimpleName() +
+                "\nNombre: " + nombre +
+                "\nEdad: " + edad +
+                "\nSalario Base: $" + salarioBase +
+                "\nSalario Final: $" + calcularSalarioFinal() +
+                "\n";
+    }
 
 }

@@ -16,6 +16,7 @@ public class Desarrollador extends Empleado {
       super(id, nombre, edad, salarioBase);
     }
 
+    
     @Override
     public int calcularSalarioFinal() {
         return (int) (getSalarioBase() * 0.20 + getSalarioBase());
